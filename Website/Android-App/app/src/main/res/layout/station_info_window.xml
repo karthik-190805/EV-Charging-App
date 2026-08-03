@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/popup_background"
+    android:minWidth="280dp"
+    android:maxWidth="320dp">
+
+    <!-- Station Name with Icon -->
+    <TextView
+        android:id="@+id/tvStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EESL Koyambedu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"/>
+
+    <!-- Distance and ETA -->
+    <TextView
+        android:id="@+id/tvDistanceEta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📍 2.3 km away • ~15 min"
+        android:textSize="13sp"
+        android:textColor="#FF69B4"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Port Availability Header -->
+    <TextView
+        android:id="@+id/tvPortAvailabilityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔌 Port Availability:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Port List Container -->
+    <LinearLayout
+        android:id="@+id/llPortList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+        <!-- Ports will be added dynamically -->
+    </LinearLayout>
+
+    <!-- Pricing and Hours -->
+    <TextView
+        android:id="@+id/tvPricing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💰 ₹12.5/kWh | ⏰ 24/7"
+        android:textSize="13sp"
+        android:textColor="#FFA726"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Amenities -->
+    <TextView
+        android:id="@+id/tvAmenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨ Cafe • Restroom • WiFi"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Tap for Details -->
+    <TextView
+        android:id="@+id/tvTapDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Tap for full details]"
+        android:textSize="12sp"
+        android:textColor="#90CAF9"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
+
+</LinearLayout>

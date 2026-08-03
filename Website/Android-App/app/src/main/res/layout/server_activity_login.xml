@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/sea_blue"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Username / Email -->
+    <EditText
+        android:id="@+id/etId"
+        android:hint="Email / Phone / Username"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPwd"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Submit -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/sea_blue"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Back button (smaller outline style) -->
+    <Button
+        android:id="@+id/btnBack"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/sea_blue"
+        android:layout_marginTop="12dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <!-- Forgot password & Sign up links -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/linkForgot"
+            android:text="Forgot Password?"
+            android:textSize="14sp"
+            android:textColor="@color/sea_blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/linkSignUp"
+            android:text="New Sign Up"
+            android:textSize="14sp"
+            android:textColor="@color/sea_blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

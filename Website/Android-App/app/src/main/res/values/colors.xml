@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sea_blue">#1976D2</color>
+    <color name="sea_blue_light">#90CAF9</color>
+    <color name="sea_blue_dark">#0D47A1</color>
+    <color name="sky_blue_light">#E6F2FF</color>
+    <color name="sea_blue_verylight">#E3F2FD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#0A2540</color>
+</resources>

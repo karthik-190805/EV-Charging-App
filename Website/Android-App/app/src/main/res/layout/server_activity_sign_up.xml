@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Page Title -->
+        <TextView
+            android:text="Register Your EV Station"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/sea_blue"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 🧍 Basic Account Details -->
+        <TextView
+            android:text="1. Basic Account Details"
+            android:textColor="@color/sea_blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etName" android:hint="Full Name"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etId" android:hint="Email Address"
+            android:inputType="textEmailAddress" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etMobile" android:hint="Phone Number"
+            android:inputType="phone" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPwd" android:hint="Password"
+            android:inputType="textPassword" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPwd2" android:hint="Confirm Password"
+            android:inputType="textPassword" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 🏢 Organization / Station Details -->
+        <TextView
+            android:text="2. Organization / Station Details"
+            android:textColor="@color/sea_blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etStationName" android:hint="Station Name"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etStationId" android:hint="Station ID / Code"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etCompany" android:hint="Organization / Company Name"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etStationType" android:hint="Station Type (Public / Private / Fleet)"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etNumChargers" android:hint="Number of Chargers Installed"
+            android:inputType="number" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 📍 Location Details -->
+        <TextView
+            android:text="3. Location Details"
+            android:textColor="@color/sea_blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etAddress" android:hint="Address"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etCity" android:hint="City"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etState" android:hint="State"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPincode" android:hint="Pincode" android:inputType="number"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etLatitude" android:hint="Latitude"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etLongitude" android:hint="Longitude"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ⚡ Station Operation Details -->
+        <TextView
+            android:text="4. Station Operation Details"
+            android:textColor="@color/sea_blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etOperatingHours" android:hint="Operating Hours"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPrice" android:hint="Pricing per kWh (₹)" android:inputType="numberDecimal"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPaymentMethods" android:hint="Payment Methods (UPI, Card, Wallet)"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etMaintenanceContact" android:hint="Maintenance Contact Number"
+            android:inputType="phone" android:background="@drawable/rounded_edittext"
+            android:padding="12dp" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etAuthCode" android:hint="Authorization Code"
+            android:background="@drawable/rounded_edittext" android:padding="12dp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/sea_blue"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:text="Back"
+            android:textColor="@color/sea_blue"
+            android:background="@drawable/btn_outline"
+            android:layout_marginTop="12dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
