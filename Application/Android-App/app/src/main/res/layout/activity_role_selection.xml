@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN AS A"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/sea_blue_dark"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_primary"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Server"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_primary"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+</LinearLayout>
