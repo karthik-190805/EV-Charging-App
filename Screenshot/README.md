@@ -1,200 +1,143 @@
-# EV Charging App – Figures and Captions
+# EV Charging App – Screenshots
 
-This README presents the figures in the correct numerical order, with suitable filenames and professional captions for the EV Charging App repository.
+This folder contains the main screenshots and system architecture of the EV Charging App.
 
-> Place all images inside the `Screenshots/` folder and save this file as `Screenshots/README.md`.
-
----
-
-## Recommended Image Filenames
+## Image Files
 
 ```text
 Screenshots/
-├── fig01_system_architecture.jpg
-├── fig02_role_selection.jpg
-├── fig03_user_login.jpg
-├── fig04_login_success_dashboard.jpg
-├── fig05_nearest_stations_default.jpg
-├── fig06_marker_popup_station_info.jpg
-├── fig07_station_details_window.jpg
-├── fig08_station_features_popup.jpg
-├── fig09_share_station_details.jpg
-├── fig10_route_filtering_screen.jpg
-├── fig11_route_station_list_a.jpg
-├── fig12_route_station_list_b.jpg
-├── fig13_selected_station_details.jpg
-├── fig14_server_login.jpg
-├── fig15_server_station_configuration_top.jpg
-├── fig16_server_station_configuration_bottom.jpg
+├── fig_01.jpeg
+├── fig_02.jpeg
+├── fig_03.jpeg
+├── fig_04.jpeg
+├── fig_05.jpeg
+├── fig_06.jpeg
+├── fig_07.jpeg
+├── fig_08.jpeg
+├── fig_09.jpeg
 └── README.md
 ```
 
 ---
 
-## Fig. 1. Three-Layer System Architecture
+## Fig. 1 – System Architecture
 
 <p align="center">
-  <img src="fig01_system_architecture.jpg" alt="Three-Layer System Architecture" width="70%">
+  <img src="fig_01.jpeg" alt="EV Charging App System Architecture" width="65%">
 </p>
 
-<p align="center"><em>Fig. 1. Three-layer system architecture of the EV charging mobile application. The presentation layer includes RecyclerView, Google Maps SDK, and Material Design components. The application logic layer performs Haversine distance calculation, 2 km route-corridor filtering, and location-based sorting. The data layer manages the charging-station JSON dataset, Gson parsing, and GPS location services.</em></p>
+<p align="center">
+  <em>Fig. 1. Three-layer architecture of the EV Charging App, consisting of the presentation layer, application logic layer and data layer.</em>
+</p>
 
 ---
 
-## Fig. 2. User and Server Role Selection
+## Fig. 2 – Role Selection Screen
 
 <p align="center">
-  <img src="fig02_role_selection.jpg" alt="User and Server Role Selection" width="40%">
+  <img src="fig_02.jpeg" alt="Role Selection Screen" width="40%">
 </p>
 
-<p align="center"><em>Fig. 2. Role-selection screen of the EV Charging App. The user can choose either User mode for locating charging stations or Server mode for managing charging-station information.</em></p>
+<p align="center">
+  <em>Fig. 2. Role-selection screen that allows the user to choose between User and Server modes.</em>
+</p>
 
 ---
 
-## Fig. 3. User Login Screen
+## Fig. 3 – User Login Screen
 
 <p align="center">
-  <img src="fig03_user_login.jpg" alt="User Login Screen" width="40%">
+  <img src="fig_03.jpeg" alt="User Login Screen" width="40%">
 </p>
 
-<p align="center"><em>Fig. 3. User login screen of the EV Charging App. The interface accepts an email address, phone number, or username together with a password. It also provides options for password recovery and new user registration.</em></p>
+<p align="center">
+  <em>Fig. 3. Login screen where users can enter their email, phone number or username and password.</em>
+</p>
 
 ---
 
-## Fig. 4. User Dashboard After Successful Login
+## Fig. 4 – Charging-Station Dashboard
 
 <p align="center">
-  <img src="fig04_login_success_dashboard.jpg" alt="User Dashboard After Successful Login" width="40%">
+  <img src="fig_04.jpeg" alt="Charging Station Dashboard" width="40%">
 </p>
 
-<p align="center"><em>Fig. 4. Main user dashboard displayed after successful login. The screen contains the map interface, charging-station markers, route-input controls, and a list of nearby charging stations.</em></p>
+<p align="center">
+  <em>Fig. 4. Main dashboard displaying charging stations on the map and a list of nearby stations sorted by distance.</em>
+</p>
 
 ---
 
-## Fig. 5. Nearest Stations Displayed Without Route Input
+## Fig. 5 – Route-Based Station Search
 
 <p align="center">
-  <img src="fig05_nearest_stations_default.jpg" alt="Nearest Stations Without Route Input" width="40%">
+  <img src="fig_05.jpeg" alt="Route-Based Station Search" width="40%">
 </p>
 
-<p align="center"><em>Fig. 5. When the start location and destination are not entered, the application automatically displays the nearest charging stations. The stations are presented on the map and listed in order of proximity.</em></p>
+<p align="center">
+  <em>Fig. 5. Route-search screen showing charging stations available near the selected destination.</em>
+</p>
 
 ---
 
-## Fig. 6. Charging-Station Marker Information Pop-up
+## Fig. 6 – Charging-Station List
 
 <p align="center">
-  <img src="fig06_marker_popup_station_info.jpg" alt="Charging-Station Marker Information Pop-up" width="40%">
+  <img src="fig_06.jpeg" alt="Charging Station List" width="55%">
 </p>
 
-<p align="center"><em>Fig. 6. Selecting a charging-station marker opens an information pop-up. The pop-up displays the station name, port availability, charger type, distance, estimated travel time, price per kWh, and operating hours.</em></p>
+<p align="center">
+  <em>Fig. 6. Charging-station list displaying station name, charger type, distance, travel time, availability, price and operating hours.</em>
+</p>
 
 ---
 
-## Fig. 7. Charging-Station Details Screen
+## Fig. 7 – Station Details Screen
 
 <p align="center">
-  <img src="fig07_station_details_window.jpg" alt="Charging-Station Details Screen" width="40%">
+  <img src="fig_07.jpeg" alt="Station Details Screen" width="40%">
 </p>
 
-<p align="center"><em>Fig. 7. Detailed information screen for a selected charging station. The screen presents charging-port availability, pricing, operating hours, charger type, geographic coordinates, ratings, and options to view the route, open station features, or share station information.</em></p>
+<p align="center">
+  <em>Fig. 7. Detailed station screen showing port availability, pricing, operating hours, location, rating and navigation options.</em>
+</p>
 
 ---
 
-## Fig. 8. Detailed Station Features Pop-up
+## Fig. 8 – Station Features
 
 <p align="center">
-  <img src="fig08_station_features_popup.jpg" alt="Detailed Station Features Pop-up" width="40%">
+  <img src="fig_08.jpeg" alt="Station Features Popup" width="40%">
 </p>
 
-<p align="center"><em>Fig. 8. Station-features pop-up displayed after selecting the Features option. It provides detailed information such as station type, number of charging points, public availability, contact details, nearby restaurants, cafes, medical facilities, reviews, and other useful notes.</em></p>
+<p align="center">
+  <em>Fig. 8. Station-features window displaying charger information, contact details, opening hours and nearby facilities.</em>
+</p>
 
 ---
 
-## Fig. 9. Sharing Charging-Station Details
+## Fig. 9 – Share Station Details
 
 <p align="center">
-  <img src="fig09_share_station_details.jpg" alt="Sharing Charging-Station Details" width="40%">
+  <img src="fig_09.jpeg" alt="Share Station Details" width="40%">
 </p>
 
-<p align="center"><em>Fig. 9. Android sharing interface used to share charging-station information through supported applications. The shared content includes station name, charger type, port availability, pricing, operating hours, and geographic coordinates.</em></p>
+<p align="center">
+  <em>Fig. 9. Android sharing interface used to share the selected charging station's details through supported applications.</em>
+</p>
 
 ---
 
-## Fig. 10. Route-Based Charging-Station Filtering
+## Summary
 
-<p align="center">
-  <img src="fig10_route_filtering_screen.jpg" alt="Route-Based Charging-Station Filtering" width="40%">
-</p>
+The screenshots demonstrate the main functions of the EV Charging App, including:
 
-<p align="center"><em>Fig. 10. After the user enters the start location and destination, the application filters the charging stations and displays those located within a 2 km corridor of the selected route.</em></p>
-
----
-
-## Fig. 11. First Part of the Route-Based Station List
-
-<p align="center">
-  <img src="fig11_route_station_list_a.jpg" alt="First Part of Route-Based Station List" width="40%">
-</p>
-
-<p align="center"><em>Fig. 11. First section of the charging-station list generated for the selected route. Each entry displays the station name, charger types, distance, estimated travel time, price per kWh, availability status, and operating hours.</em></p>
-
----
-
-## Fig. 12. Second Part of the Route-Based Station List
-
-<p align="center">
-  <img src="fig12_route_station_list_b.jpg" alt="Second Part of Route-Based Station List" width="40%">
-</p>
-
-<p align="center"><em>Fig. 12. Continuation of the charging-station list for the selected route, showing additional nearby stations and their charging-port, pricing, distance, availability, and operating-hour information.</em></p>
-
----
-
-## Fig. 13. Details of a Selected Route-Based Station
-
-<p align="center">
-  <img src="fig13_selected_station_details.jpg" alt="Details of a Selected Route-Based Station" width="40%">
-</p>
-
-<p align="center"><em>Fig. 13. Details screen of a charging station selected from the route-filtered list. The screen displays charging-port availability, pricing, operating hours, charger type, geographic coordinates, ratings, and route, feature, and sharing options.</em></p>
-
----
-
-## Fig. 14. Server-Side Station Management Screen
-
-<p align="center">
-  <img src="fig14_server_login.jpg" alt="Server-Side Station Management Screen" width="40%">
-</p>
-
-<p align="center"><em>Fig. 14. Server-side station-management screen. The station administrator can enter or update technical and operational information such as station type, number of installed chargers, and charging price.</em></p>
-
----
-
-## Fig. 15. Server Configuration of Charger Count and Pricing
-
-<p align="center">
-  <img src="fig15_server_station_configuration_top.jpg" alt="Server Configuration of Charger Count and Pricing" width="40%">
-</p>
-
-<p align="center"><em>Fig. 15. Upper section of the server-side station-configuration screen. The administrator can specify the station type, number of chargers installed, and price per kWh.</em></p>
-
----
-
-## Fig. 16. Server Configuration of Operating Hours and Status
-
-<p align="center">
-  <img src="fig16_server_station_configuration_bottom.jpg" alt="Server Configuration of Operating Hours and Status" width="40%">
-</p>
-
-<p align="center"><em>Fig. 16. Lower section of the server-side station-configuration screen. The administrator can set the opening and closing times, update the online status, and save the station details.</em></p>
-
----
-
-## Notes
-
-- Save this file as `README.md` inside the `Screenshots/` folder.
-- Keep all image filenames exactly as listed above.
-- The images will appear automatically when the `Screenshots/README.md` file is viewed on GitHub.
-- Do not place the image paths inside code blocks.
-- Use relative image paths so GitHub displays the images directly.
+- User and server role selection
+- User authentication
+- Charging-station map display
+- Location-based station sorting
+- Route-based station filtering
+- Station availability and pricing
+- Detailed station information
+- Nearby facilities
+- Station-information sharing
